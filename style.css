@@ -1,0 +1,66 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  /* font-size: 1.25rem; */
+}
+
+.balance-card {
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+}
+
+.spending-card {
+  background-color: hsl(33, 100%, 98%);
+  color: hsl(28, 10%, 53%);
+}
+
+.spending-card__chart {
+  border-bottom: 2px solid hsl(27, 66%, 92%);
+}
+
+.chart__table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.chart__table-body {
+  display: flex;
+}
+
+.chart__title,
+.spending-card__total-price,
+.spending-card__rate {
+  color: hsl(25, 47%, 15%);
+  font-weight: bold;
+}
+
+.chart__title {
+  display: block;
+  text-align: left;
+}
+
+.chart__day {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.day__heading {
+  font-weight: normal;
+}
+
+.day__bar {
+  background-color: hsl(10, 79%, 65%);
+}
+
+.attribution {
+  color: hsl(25, 47%, 15%);
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

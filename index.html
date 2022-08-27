@@ -11,64 +11,74 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Expenses chart component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
-      <article>
+      <article class="balance-card">
         <div>
           <h2>My balance</h2>
           <span>$921.48</span>
         </div>
+        <div>
+          <img src="./images/logo.svg" alt="Expense Chart Logo" />
+        </div>
       </article>
 
-      <article>
-        <div>
-          <h2>Spending - Last 7 days</h2>
-          <p>
-            <!-- TODO: Use <meter></meter> for each bar -->
-            <label for="mon-amount">mon</label>
-            <meter id="mon-amount" min="0" max="100" value="25"></meter>
-
-            <label for="tue-amount">tue</label>
-            <meter id="tue-amount" min="0" max="100" value="40"></meter>
-
-            <label for="wed-amount">wed</label>
-            <meter id="wed-amount" min="0" max="100" value="100"></meter>
-
-            <label for="thu-amount">thu</label>
-            <meter id="thu-amount" min="0" max="100" value="75"></meter>
-
-            <label for="fri-amount">fri</label>
-            <meter id="fri-amount" min="0" max="100" value="60"></meter>
-
-            <label for="sat-amount">sat</label>
-            <meter id="sat-amount" min="0" max="100" value="70"></meter>
-
-            <label for="sun-amount">sun</label>
-            <meter id="sun-amount" min="0" max="100" value="89"></meter>
-          </p>
+      <article class="spending-card">
+        <div class="spending-card__chart">
+          <table class="chart__table" id="spending-chart">
+            <caption class="chart__title">
+              Spending - Last 7 days
+            </caption>
+            <tbody class="chart__table-body">
+              <tr class="chart__day">
+                <th class="day__heading">mon</th>
+                <td class="day__bar"></td>
+              </tr>
+              <tr class="chart__day">
+                <th class="day__heading">tue</th>
+                <td class="day__bar"></td>
+              </tr>
+              <tr class="chart__day">
+                <th class="day__heading">wed</th>
+                <td class="day__bar"></td>
+              </tr>
+              <tr class="chart__day">
+                <th class="day__heading">thu</th>
+                <td class="day__bar"></td>
+              </tr>
+              <tr class="chart__day">
+                <th class="day__heading">fri</th>
+                <td class="day__bar"></td>
+              </tr>
+              <tr class="chart__day">
+                <th class="day__heading">sat</th>
+                <td class="day__bar"></td>
+              </tr>
+              <tr class="chart__day">
+                <th class="day__heading">sun</th>
+                <td class="day__bar"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div>
           <p>
             <span>Total this month</span>
-            <span>$478.33</span>
+            <span class="spending-card__total-price">$478.33</span>
           </p>
 
           <p>
-            <span>+2.4%</span>
+            <span class="spending-card__rate">+2.4%</span>
             <span>from last month</span>
           </p>
         </div>
