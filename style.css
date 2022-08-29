@@ -28,6 +28,7 @@ body {
 .balance-card__heading {
   font-weight: normal;
   font-size: 0.77778rem;
+  margin-bottom: 0.2778rem;
 }
 
 .balance-card__price {
