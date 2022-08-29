@@ -1,19 +1,53 @@
 * {
-  margin: 0 auto;
+  margin: 0;
+  font-size: 18px;
 }
 
 body {
   background-color: hsl(27, 66%, 92%);
   font-family: "DM Sans", sans-serif;
-  /* font-size: 1.25rem; */
+  margin: 3.7778rem 0.8889rem;
 }
 
-.balance-card {
+.expense-chart__container {
+  margin-bottom: 2.75rem;
+}
+
+/* Balance Card */
+
+.expense-chart__balance-card {
   background-color: hsl(10, 79%, 65%);
   color: hsl(33, 100%, 98%);
+  padding: 1.2222rem 1.1111rem;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.spending-card {
+.balance-card__heading {
+  font-weight: normal;
+  font-size: 0.77778rem;
+}
+
+.balance-card__price {
+  font-size: 1.333333rem;
+  font-weight: bold;
+}
+
+.balance-card__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.balance-card__logo {
+  width: 3.44445rem;
+  height: 2.2223rem;
+}
+
+/* Spending Card */
+
+.expense-chart__spending-card {
   background-color: hsl(33, 100%, 98%);
   color: hsl(28, 10%, 53%);
 }
@@ -62,6 +96,8 @@ body {
 #wed-bar__bg-color {
   background-color: hsl(186, 34%, 60%);
 }
+
+/* Attribution */
 
 .attribution {
   color: hsl(25, 47%, 15%);

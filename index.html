@@ -22,18 +22,22 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    <main>
-      <article class="balance-card">
+    <main class="expense-chart__container">
+      <article class="expense-chart__balance-card">
         <div>
-          <h2>My balance</h2>
-          <span>$921.48</span>
+          <h2 class="balance-card__heading">My balance</h2>
+          <span class="balance-card__price">$921.48</span>
         </div>
-        <div>
-          <img src="./images/logo.svg" alt="Expense Chart Logo" />
+        <div class="balance-card__logo-container">
+          <img
+            src="./images/logo.svg"
+            alt="Expense Chart Logo"
+            class="balance-card__logo"
+          />
         </div>
       </article>
 
-      <article class="spending-card">
+      <article class="expense-chart__spending-card">
         <div class="spending-card__chart">
           <table class="chart__table" id="spending-chart">
             <caption class="chart__title">
