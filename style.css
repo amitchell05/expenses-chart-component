@@ -45,6 +45,7 @@ body {
 
 .chart__day {
   display: flex;
+  width: 2rem;
   flex-direction: column-reverse;
 }
 
@@ -54,6 +55,12 @@ body {
 
 .day__bar {
   background-color: hsl(10, 79%, 65%);
+  width: 2rem;
+  height: 100px;
+}
+
+#wed-bar__bg-color {
+  background-color: hsl(186, 34%, 60%);
 }
 
 .attribution {
@@ -62,5 +69,5 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(10, 79%, 65%);
 }
