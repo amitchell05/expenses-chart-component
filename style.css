@@ -51,6 +51,8 @@ body {
 .expense-chart__spending-card {
   background-color: hsl(33, 100%, 98%);
   color: hsl(28, 10%, 53%);
+  padding: 1.2222rem 1.1111rem;
+  border-radius: 0.625rem;
 }
 
 .spending-card__chart {
