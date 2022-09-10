@@ -9,13 +9,13 @@ body {
   margin: 3.7778rem 0.8889rem;
 }
 
-.expense-chart__container {
+.expense-chart {
   margin-bottom: 2.75rem;
 }
 
 /* Balance Card */
 
-.expense-chart__balance-card {
+.balance-card {
   background-color: hsl(10, 79%, 65%);
   color: hsl(33, 100%, 98%);
   padding: 1.2222rem 1.1111rem;
@@ -48,7 +48,7 @@ body {
 
 /* Spending Card */
 
-.expense-chart__spending-card {
+.spending-card {
   background-color: hsl(33, 100%, 98%);
   color: hsl(28, 10%, 53%);
   padding: 1.2222rem 1.1111rem;
@@ -60,43 +60,43 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.chart__table {
+.spending-card__table {
   width: 100%;
 }
 
-.chart__table-body {
+.spending-card__body {
   display: flex;
   justify-content: space-between;
 }
 
-.chart__title,
-.month__price,
-.rate__percentage {
+.spending-card__title,
+.spending-card__month-price,
+.spending-card__rate-percentage {
   color: hsl(25, 47%, 15%);
   font-weight: bold;
 }
 
-.chart__title {
+.spending-card__title {
   display: block;
   text-align: left;
   font-size: 1.333rem;
   margin-bottom: 1.389rem;
 }
 
-.chart__day {
+.spending-card__day {
   display: flex;
   width: 1.834rem;
   flex-direction: column-reverse;
 }
 
-.day__heading {
+.spending-card__tooltip {
   font-weight: normal;
   font-size: 0.77778rem;
   margin-top: 0.944rem;
   margin-bottom: 1.5rem;
 }
 
-.day__bar {
+.spending-card__bar {
   background-color: hsl(10, 79%, 65%);
   height: 8.333rem;
   border-radius: 0.167rem;
@@ -111,35 +111,35 @@ body {
   justify-content: space-between;
 }
 
-.total__month,
-.total__rate {
+.spending-card__month,
+.spending-card__rate {
   display: flex;
   flex-direction: column;
 }
 
-.total__month {
+.spending-card__month {
   margin-right: 1.111rem;
 }
 
-.month__label {
+.spending-card__month-label {
   font-size: 0.778rem;
 }
 
-.month__price {
+.spending-card__month-price {
   font-size: 1.556rem;
 }
 
-.total__rate {
+.spending-card__rate {
   justify-content: flex-end;
   align-items: flex-end;
   margin-left: 1.111rem;
 }
 
-.rate__percentage {
+.spending-card__rate-percentage {
   font-size: 0.778rem;
 }
 
-.rate__label {
+.spending-card__rate-label {
   text-align: right;
   font-size: 0.778rem;
 }
