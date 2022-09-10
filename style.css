@@ -1,12 +1,12 @@
 * {
   margin: 0;
-  font-size: 18px;
 }
 
 body {
   background-color: hsl(27, 66%, 92%);
   font-family: "DM Sans", sans-serif;
-  margin: 3.7778rem 0.8889rem;
+  margin: 4.25rem 1rem;
+  font-size: 1.125rem;
 }
 
 .expense-chart {
@@ -18,7 +18,7 @@ body {
 .balance-card {
   background-color: hsl(10, 79%, 65%);
   color: hsl(33, 100%, 98%);
-  padding: 1.2222rem 1.1111rem;
+  padding: 1.375rem 1.25rem;
   margin-bottom: 1rem;
   border-radius: 0.625rem;
   display: flex;
@@ -27,12 +27,12 @@ body {
 
 .balance-card__heading {
   font-weight: normal;
-  font-size: 0.77778rem;
-  margin-bottom: 0.2778rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.313rem;
 }
 
 .balance-card__price {
-  font-size: 1.333333rem;
+  font-size: 0.129rem;
   font-weight: bold;
 }
 
@@ -42,8 +42,8 @@ body {
 }
 
 .balance-card__logo {
-  width: 3.44445rem;
-  height: 2.2223rem;
+  width: 3.875rem;
+  height: 2.5rem;
 }
 
 /* Spending Card */
@@ -51,7 +51,7 @@ body {
 .spending-card {
   background-color: hsl(33, 100%, 98%);
   color: hsl(28, 10%, 53%);
-  padding: 1.2222rem 1.1111rem;
+  padding: 1.375rem 1.25rem;
   border-radius: 0.625rem;
 }
 
@@ -79,13 +79,13 @@ body {
 .spending-card__title {
   display: block;
   text-align: left;
-  font-size: 1.333rem;
-  margin-bottom: 1.389rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.563rem;
 }
 
 .spending-card__day {
   display: flex;
-  width: 1.834rem;
+  width: 2.063rem;
   flex-direction: column-reverse;
 }
 
@@ -98,8 +98,8 @@ body {
 
 .spending-card__bar {
   background-color: hsl(10, 79%, 65%);
-  height: 8.333rem;
-  border-radius: 0.167rem;
+  height: 9.375rem;
+  border-radius: 0.119rem;
 }
 
 #wed-bar__bg-color {
@@ -118,30 +118,30 @@ body {
 }
 
 .spending-card__month {
-  margin-right: 1.111rem;
+  margin-right: 1.25rem;
 }
 
 .spending-card__month-label {
-  font-size: 0.778rem;
+  font-size: 0.875rem;
 }
 
 .spending-card__month-price {
-  font-size: 1.556rem;
+  font-size: 1.75rem;
 }
 
 .spending-card__rate {
   justify-content: flex-end;
   align-items: flex-end;
-  margin-left: 1.111rem;
+  margin-left: 1.25rem;
 }
 
 .spending-card__rate-percentage {
-  font-size: 0.778rem;
+  font-size: 0.875rem;
 }
 
 .spending-card__rate-label {
   text-align: right;
-  font-size: 0.778rem;
+  font-size: 0.875rem;
 }
 
 /* Attribution */
