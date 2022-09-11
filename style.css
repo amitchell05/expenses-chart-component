@@ -82,8 +82,16 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.spending-card__table {
-  width: 100%;
+#spending-chart.data-spacing-5 tbody tr {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+@media (min-width: 48.0625rem) {
+  #spending-chart.data-spacing-12 tbody tr {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 .spending-card__title {
