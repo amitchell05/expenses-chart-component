@@ -22,71 +22,77 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    <main class="expense-chart">
-      <article class="balance-card">
-        <div>
-          <h2 class="balance-card__heading">My balance</h2>
-          <span class="balance-card__price">$921.48</span>
-        </div>
-        <div class="balance-card__logo-container">
-          <img
-            src="./images/logo.svg"
-            alt="Expense Chart Logo"
-            class="balance-card__logo"
-          />
-        </div>
-      </article>
+    <main class="expenses-chart">
+      <div class="expenses-chart__container">
+        <article class="balance-card">
+          <div class="balance-card__container">
+            <div>
+              <h2 class="balance-card__heading">My balance</h2>
+              <span class="balance-card__price">$921.48</span>
+            </div>
+            <div class="balance-card__logo-container">
+              <img
+                src="./images/logo.svg"
+                alt="Expense Chart Logo"
+                class="balance-card__logo"
+              />
+            </div>
+          </div>
+        </article>
 
-      <article class="spending-card">
-        <div class="spending-card__chart">
-          <table class="spending-card__table" id="spending-chart">
-            <caption class="spending-card__title">
-              Spending - Last 7 days
-            </caption>
-            <tbody class="spending-card__body">
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">mon</th>
-                <td class="spending-card__bar"></td>
-              </tr>
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">tue</th>
-                <td class="spending-card__bar"></td>
-              </tr>
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">wed</th>
-                <td class="spending-card__bar" id="wed-bar__bg-color"></td>
-              </tr>
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">thu</th>
-                <td class="spending-card__bar"></td>
-              </tr>
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">fri</th>
-                <td class="spending-card__bar"></td>
-              </tr>
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">sat</th>
-                <td class="spending-card__bar"></td>
-              </tr>
-              <tr class="spending-card__day">
-                <th class="spending-card__tooltip">sun</th>
-                <td class="spending-card__bar"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="spending-card__total">
-          <p class="spending-card__month">
-            <span class="spending-card__month-label">Total this month</span>
-            <span class="spending-card__month-price">$478.33</span>
-          </p>
+        <article class="spending-card">
+          <div class="spending-card__container">
+            <div class="spending-card__chart">
+              <table class="spending-card__table" id="spending-chart">
+                <caption class="spending-card__title">
+                  Spending - Last 7 days
+                </caption>
+                <tbody class="spending-card__body">
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">mon</th>
+                    <td class="spending-card__bar"></td>
+                  </tr>
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">tue</th>
+                    <td class="spending-card__bar"></td>
+                  </tr>
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">wed</th>
+                    <td class="spending-card__bar" id="wed-bar__bg-color"></td>
+                  </tr>
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">thu</th>
+                    <td class="spending-card__bar"></td>
+                  </tr>
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">fri</th>
+                    <td class="spending-card__bar"></td>
+                  </tr>
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">sat</th>
+                    <td class="spending-card__bar"></td>
+                  </tr>
+                  <tr class="spending-card__day">
+                    <th class="spending-card__tooltip">sun</th>
+                    <td class="spending-card__bar"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="spending-card__total">
+              <p class="spending-card__month">
+                <span class="spending-card__month-label">Total this month</span>
+                <span class="spending-card__month-price">$478.33</span>
+              </p>
 
-          <p class="spending-card__rate">
-            <span class="spending-card__rate-percentage">+2.4%</span>
-            <span class="spending-card__rate-label">from last month</span>
-          </p>
-        </div>
-      </article>
+              <p class="spending-card__rate">
+                <span class="spending-card__rate-percentage">+2.4%</span>
+                <span class="spending-card__rate-label">from last month</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
 
     <footer class="attribution">
