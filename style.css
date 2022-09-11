@@ -86,9 +86,14 @@ body {
   width: 100%;
 }
 
+.spending-card__table h2 {
+  font-size: 1.25rem;
+}
+
 .spending-card__body {
   display: flex;
   justify-content: space-between;
+  gap: 2vh;
 }
 
 .spending-card__title,
@@ -107,8 +112,9 @@ body {
 
 .spending-card__day {
   display: flex;
-  width: 2.063rem;
   flex-direction: column-reverse;
+  max-width: 3.125rem;
+  width: 100%;
 }
 
 .spending-card__tooltip {
