@@ -151,6 +151,7 @@ body {
 
 .spending-card__month-label {
   font-size: 0.875rem;
+  margin-bottom: 0.25rem;
 }
 
 .spending-card__month-price {
