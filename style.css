@@ -86,8 +86,15 @@ body {
   width: 100%;
 }
 
-.spending-card__table h2 {
-  font-size: 1.25rem;
+.spending-card__title {
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1.563rem;
+}
+
+.spending-card__title h2 {
+  font-size: 1.5625rem;
 }
 
 .spending-card__body {
@@ -101,13 +108,6 @@ body {
 .spending-card__rate-percentage {
   color: hsl(25, 47%, 15%);
   font-weight: bold;
-}
-
-.spending-card__title {
-  display: block;
-  text-align: left;
-  font-size: 1.5rem;
-  margin-bottom: 1.563rem;
 }
 
 .spending-card__day {
