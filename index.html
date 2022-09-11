@@ -23,6 +23,8 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
+    <script type="text/javascript" src="./script.js"></script>
+
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
@@ -51,7 +53,9 @@
                 id="spending-chart"
                 class="charts-css column show-heading show-labels data-spacing-5 data-spacing-12"
               >
-                <caption>
+                <caption
+                  style="margin-bottom: 10px; height: unset; text-align: left"
+                >
                   <h2>Spending - Last 7 days</h2>
                 </caption>
                 <thead>
@@ -60,35 +64,7 @@
                     <th scope="col">Spending</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">mon</th>
-                    <td>17.45</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">tue</th>
-                    <td>34.91</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">wed</th>
-                    <td>52.36</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">thu</th>
-                    <td>31.07</td>
-                  </tr>
-                  <tr>
-                    <th scope="col">fri</th>
-                    <td>23.39</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">sat</th>
-                    <td>43.28</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">sun</th>
-                    <td>25.48</td>
-                  </tr>
+                <tbody id="spending-chart__body">
                 </tbody>
               </table>
             </div>
