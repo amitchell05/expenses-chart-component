@@ -82,16 +82,25 @@ body {
   margin-bottom: 1.5rem;
 }
 
-#spending-chart.data-spacing-5 tbody tr {
+#spending-chart tbody {
+  height: 9.375rem;
+}
+
+#spending-chart.data-spacing-6 tbody tr {
   padding-left: 0.375rem;
   padding-right: 0.375rem;
 }
 
 @media (min-width: 48.0625rem) {
-  #spending-chart.data-spacing-12 tbody tr {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+  #spending-chart.data-spacing-10 tbody tr {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
+}
+
+#spending-chart td {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.188rem;
 }
 
 .spending-card__title {
@@ -118,13 +127,6 @@ body {
   font-weight: bold;
 }
 
-.spending-card__day {
-  display: flex;
-  flex-direction: column-reverse;
-  max-width: 3.125rem;
-  width: 100%;
-}
-
 .spending-card__tooltip {
   font-weight: normal;
   font-size: 0.77778rem;
@@ -132,14 +134,8 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.spending-card__bar {
-  background-color: hsl(10, 79%, 65%);
-  height: 9.375rem;
-  border-radius: 0.188rem;
-}
-
-#wed-bar__bg-color {
-  background-color: hsl(186, 34%, 60%);
+.spending-card__highest-expense {
+  background-color: hsl(186, 34%, 60%) !important;
 }
 
 .spending-card__total {
