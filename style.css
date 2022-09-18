@@ -107,19 +107,16 @@ body {
   text-align: left;
 }
 
-@media (min-width: 48.0625rem) {
-  #spending-chart.data-spacing-10 tbody tr {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-  }
+#spending-chart__body tr {
+  font-size: 0.875rem;
+}
 
-  #spending-chart caption {
-    margin-bottom: 4.1875rem;
-  }
+#spending-chart__body th {
+  font-weight: normal;
+}
 
-  #spending-chart h2 {
-    font-size: 2rem;
-  }
+#spending-chart {
+  margin-bottom: 1.5rem;
 }
 
 .spending-card__title h2 {
@@ -136,13 +133,6 @@ body {
 .spending-card__rate-percentage {
   color: hsl(25, 47%, 15%);
   font-weight: bold;
-}
-
-.spending-card__tooltip {
-  font-weight: normal;
-  font-size: 0.77778rem;
-  margin-top: 0.944rem;
-  margin-bottom: 1.5rem;
 }
 
 .spending-card__highest-expense {
@@ -186,6 +176,25 @@ body {
 .spending-card__rate-label {
   text-align: right;
   font-size: 0.875rem;
+}
+
+@media (min-width: 48.0625rem) {
+  #spending-chart.data-spacing-10 tbody tr {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  #spending-chart caption {
+    margin-bottom: 4.1875rem;
+  }
+
+  #spending-chart h2 {
+    font-size: 2rem;
+  }
+
+  .spending-card__month-price {
+    font-size: 2.25rem;
+  }
 }
 
 /* Attribution */

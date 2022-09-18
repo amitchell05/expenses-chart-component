@@ -36,10 +36,3 @@ function calculateHighestExpense(json) {
   // map creates an array of all of the expense amonuts
   return Math.max(...json.map((expense) => expense.amount));
 }
-
-// future enhancement?
-// function calculateTotalMonthExpenses(json) {
-//   return json.reduce((accumulator, expense) => {
-//     return accumulator + expense.amount;
-//   }, 0);
-// }
