@@ -17,13 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
-    />
     <link rel="stylesheet" href="./style.css" />
 
-    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
@@ -48,23 +44,10 @@
 
         <article class="spending-card">
           <div class="spending-card__container">
-            <div class="spending-card__chart">
-              <table
-                id="spending-chart"
-                class="charts-css column show-heading show-labels data-spacing-6 data-spacing-10 hide-data"
-              >
-                <caption>
-                  <h2>Spending - Last 7 days</h2>
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Day</th>
-                    <th scope="col">Spending</th>
-                  </tr>
-                </thead>
-                <tbody id="spending-chart__body"></tbody>
-              </table>
-            </div>
+            <h2>Spending - Last 7 Days</h2>
+
+            <div id="d3-container"></div>
+
             <div class="spending-card__total">
               <p class="spending-card__month">
                 <span class="spending-card__month-label">Total this month</span>
@@ -86,5 +69,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Angela Mitchell</a>.
     </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>

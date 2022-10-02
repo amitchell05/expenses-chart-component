@@ -8,43 +8,43 @@ const DAYS = {
   6: "sat",
 };
 
-window.addEventListener("load", () => {
-  fetch("./data.json").then((response) => {
-    response.json().then((json) => {
-      appendChartData(json);
-    });
-  });
+const width = 600;
+const height = 250;
+const margin = { top: 10, bottom: 10, left: -12, right: 50 };
+
+const svg = d3
+  .select("#d3-container")
+  .append("svg")
+  .attr("height", height - margin.top - margin.bottom)
+  .attr("width", width - margin.left - margin.right)
+  .attr("viewBox", [0, 0, width, height]);
+
+d3.json("./data.json").then((expenses) => {
+  createBarChart(expenses);
 });
 
-function appendChartData(json) {
-  const tbody = document.getElementById("spending-chart__body");
-  const highestExpense = calculateHighestExpense(json);
-  const currentDay = new Date().getDay();
+function createBarChart(expenses) {
+  const x = d3
+    .scaleBand()
+    .domain(d3.range(expenses.length))
+    .range([margin.left, width - margin.right])
+    .padding(0.1);
 
-  json.forEach((expense, index) => {
-    const roundedExpense = Math.round(expense.amount);
-
-    tbody.innerHTML += `
-        <tr data-id="expense-${index + 1}">
-            <th scope="row">${expense.day}</th>
-            <td style="--size: calc(${roundedExpense}/ ${Math.round(
-      highestExpense
-    )})"><span class="data">${expense.amount}</span></td>
-        </tr>
-    `;
-
-    if (expense.day === DAYS[currentDay]) {
-      highlightCurrentDay(`expense-${index + 1}`);
-    }
-  });
-}
-
-function calculateHighestExpense(json) {
-  // map creates an array of all of the expense amonuts
-  return Math.max(...json.map((expense) => expense.amount));
-}
-
-function highlightCurrentDay(dataId) {
-  const bar = document.querySelector(`tr[data-id="${dataId}"] td`);
-  bar.classList.add("spending-card__current-day");
+  const y = d3
+    .scaleLinear()
+    .domain([0, 100])
+    .range([height - margin.bottom, margin.top]);
+  
+  svg
+    .append("g")
+    .attr("fill", "hsl(10, 79%, 65%)")
+    .selectAll("rect")
+    .data(expenses)
+    .join("rect")
+    .attr("x", (expense, i) => x(i))
+    .attr("y", (expense) => y(expense.amount))
+    .attr("height", (expense) => y(0) - y(expense.amount))
+    .attr("width", x.bandwidth());
+  
+  svg.node();
 }
