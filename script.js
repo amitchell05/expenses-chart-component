@@ -21,6 +21,7 @@ const svg = d3
 
 d3.json("./data.json").then((expenses) => {
   createBarChart(expenses);
+  highlightCurrentDay();
 });
 
 function createBarChart(expenses) {
@@ -44,7 +45,10 @@ function createBarChart(expenses) {
     .attr("x", (expense, i) => x(i))
     .attr("y", (expense) => y(expense.amount))
     .attr("height", (expense) => y(0) - y(expense.amount))
-    .attr("width", x.bandwidth());
+    .attr("width", x.bandwidth())
+    .attr("rx", "0.625rem")
+    .attr("ry", "0.625rem")
+    .attr("data-expense-day", (expense, i) => `${expense.day}-expense`);
 
   svg.append("g").call((g) => {
     g.attr("transform", `translate(0, ${height - margin.bottom})`)
@@ -53,4 +57,17 @@ function createBarChart(expenses) {
   });
 
   svg.node();
+}
+
+function highlightCurrentDay() {
+  const bars = document.querySelectorAll("rect[data-expense-day]");
+  const currentDay = new Date().getDay();
+
+  bars.forEach((bar) => {
+    if (
+      bar.getAttribute("data-expense-day") === `${DAYS[currentDay]}-expense`
+    ) {
+      bar.classList.add("spending-card__current-day");
+    }
+  });
 }
