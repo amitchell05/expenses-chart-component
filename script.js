@@ -9,8 +9,8 @@ const DAYS = {
 };
 
 const width = 600;
-const height = 250;
-const margin = { top: 10, bottom: 10, left: -12, right: 50 };
+const height = 500;
+const margin = { top: 50, bottom: 50, left: 50, right: 50 };
 
 const svg = d3
   .select("#d3-container")
@@ -34,7 +34,7 @@ function createBarChart(expenses) {
     .scaleLinear()
     .domain([0, 100])
     .range([height - margin.bottom, margin.top]);
-  
+
   svg
     .append("g")
     .attr("fill", "hsl(10, 79%, 65%)")
@@ -45,6 +45,12 @@ function createBarChart(expenses) {
     .attr("y", (expense) => y(expense.amount))
     .attr("height", (expense) => y(0) - y(expense.amount))
     .attr("width", x.bandwidth());
-  
+
+  svg.append("g").call((g) => {
+    g.attr("transform", `translate(0, ${height - margin.bottom})`)
+      .call(d3.axisBottom(x).tickFormat((i) => expenses[i].day))
+      .attr("font-size", "0.875rem");
+  });
+
   svg.node();
 }
