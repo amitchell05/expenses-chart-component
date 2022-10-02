@@ -135,7 +135,7 @@ body {
   font-weight: bold;
 }
 
-.spending-card__highest-expense {
+.spending-card__current-day {
   background-color: hsl(186, 34%, 60%) !important;
 }
 
