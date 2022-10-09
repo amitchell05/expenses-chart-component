@@ -188,6 +188,7 @@ body {
 
 #spending-chart td:hover {
   background-color: hsl(11, 87%, 76%);
+  cursor: pointer;
 }
 
 #spending-chart .tooltip {
