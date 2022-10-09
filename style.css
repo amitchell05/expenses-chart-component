@@ -1,12 +1,12 @@
-* {
-  margin: 0;
-}
-
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
   background-color: hsl(27, 66%, 92%);
   font-family: "DM Sans", sans-serif;
-  margin-left: 1rem;
-  margin-right: 1rem;
   font-size: 1.125rem;
 }
 
@@ -19,8 +19,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3vh;
-  height: 41.25rem;
 }
 
 /* Balance Card */
@@ -31,6 +29,7 @@ body {
   border-radius: 0.625rem;
   max-width: 33.875rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .balance-card__container {
@@ -42,6 +41,7 @@ body {
 .balance-card__heading {
   font-weight: normal;
   font-size: 0.875rem;
+  margin-top: 0;
   margin-bottom: 0.313rem;
 }
 
@@ -66,8 +66,8 @@ body {
   background-color: hsl(33, 100%, 98%);
   color: hsl(28, 10%, 53%);
   border-radius: 0.625rem;
-  max-width: 33.875rem;
-  width: 100%;
+  max-width: 100%;
+  width: 33.875rem;
 }
 
 .spending-card__container {
@@ -98,6 +98,8 @@ body {
 
 #spending-chart h2 {
   font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
   color: hsl(25, 47%, 15%);
 }
 
