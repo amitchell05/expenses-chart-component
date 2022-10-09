@@ -19,6 +19,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* Balance Card */
