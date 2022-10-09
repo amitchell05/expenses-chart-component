@@ -139,8 +139,12 @@ body {
   font-weight: bold;
 }
 
-.spending-card__current-day {
-  background-color: hsl(186, 34%, 60%) !important;
+#spending-chart td.spending-card__current-day {
+  background-color: hsl(186, 34%, 60%);
+}
+
+#spending-chart td.spending-card__current-day:hover {
+  background-color: 	hsl(187, 49%, 80%);
 }
 
 .spending-card__total {
@@ -180,6 +184,10 @@ body {
 .spending-card__rate-label {
   text-align: right;
   font-size: 0.875rem;
+}
+
+#spending-chart td:hover {
+  background-color: hsl(11, 87%, 76%);
 }
 
 #spending-chart .tooltip {
