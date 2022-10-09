@@ -27,9 +27,10 @@ function appendChartData(json) {
     tbody.innerHTML += `
         <tr data-id="expense-${index + 1}">
             <th scope="row">${expense.day}</th>
-            <td style="--size: calc(${roundedExpense}/ ${Math.round(
-      highestExpense
-    )})"><span class="data">${expense.amount}</span></td>
+            <td style="--size: calc(${roundedExpense}/ ${Math.round(highestExpense)})">
+              <span class="data">${expense.amount}</span>
+              <span class="tooltip">$${expense.amount}</span>
+            </td>
         </tr>
     `;
 
